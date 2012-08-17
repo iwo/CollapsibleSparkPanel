@@ -52,6 +52,8 @@ in accordance with the terms of the license agreement accompanying it.
 		<s:State name="normal" />
 		<s:State name="collapsed" />
 		<s:State name="disabled" />
+		<s:State name="disabledWithControlBar" />
+		<s:State name="normalWithControlBar" />
 	</s:states>
 	
 	<s:transitions>
@@ -119,11 +121,10 @@ in accordance with the terms of the license agreement accompanying it.
 		
 		<!-- layer 5: text -->
 		<!--- Defines the appearance of the PanelSkin class's title bar. -->
-		<s:SimpleText id="titleDisplay" lineBreak="explicit"
+		<s:Label id="titleDisplay" lineBreak="explicit"
 					  left="10" right="30" top="2" height="30"
-					  verticalAlign="middle" fontWeight="bold">
-		</s:SimpleText>
-		
+					  verticalAlign="middle" fontWeight="bold"/>
+
 		<!-- TODO: Custom skin for collapse button should be created with some fancy arrow or cross -->
 		<s:Button id="collapseButton" width="16" height="16" top="7" right="7"
 			label="-" label.collapsed="+" toolTip="Collapse" toolTip.collapsed="Open" />

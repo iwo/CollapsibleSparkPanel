@@ -36,12 +36,12 @@
 			<s:VerticalLayout paddingRight="10" paddingLeft="10" paddingTop="10" paddingBottom="10" />
 		</containers:layout>
 		
-		<s:SimpleText text="Sample options:" />
+		<s:Label text="Sample options:" />
 		<s:RadioButton label="A" group="{confRBGroup}" selected="true" />
 		<s:RadioButton label="B" group="{confRBGroup}" />
 		<s:RadioButton label="B" group="{confRBGroup}" />
 		
-		<s:SimpleText text="Sample input:" />
+		<s:Label text="Sample input:" />
 		<s:NumericStepper id="sampleStepper" />
 		
 	</containers:CollapsiblePanel>
